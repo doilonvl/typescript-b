@@ -1,0 +1,10 @@
+enum API_STATUS {
+    PENDING = "PENDING", 
+    REJECTED = "REJECTED", 
+    FULFILLED = "FULFILLED"
+}
+
+let a = API_STATUS.PENDING;
+let b = API_STATUS.REJECTED;
+
+console.log(a, b);
