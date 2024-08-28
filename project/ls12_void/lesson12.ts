@@ -9,4 +9,4 @@ const sum2 = (a: number, b: number):void => {
 }
 const handleLog = (message: string):void => {   
     console.log(message);
-}
+}// tra ve undefined
