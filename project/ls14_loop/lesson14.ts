@@ -21,3 +21,23 @@ const sum = (a: number, b: number, c?: number): number => {
     if(c) return a + b + c;
     return a + b;
 }
+
+const getSum = (...arr: number[]): number => {
+    const total = 0;
+    arr.forEach((e) => e+=total);
+    return total;
+}
+
+const multiply = (n: number, ...x: number[]) => {
+    return x.map((e) => e * n);
+}
+
+console.log(multiply(10, 2, 3));
+
+
+// Overloading
+function addNew(a:string , b:string): string;
+function addNew(a: number, b: number): number;
+function addNew(a: any, b: any){
+    return a + b;
+}
